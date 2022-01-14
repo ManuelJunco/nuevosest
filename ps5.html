@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Manuel Junco" />
+    <title>Juegos</title>
+    <link rel="stylesheet" type="text/css" href="ps5.css" />
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script src="logica.js"></script>
+</head>
+
+<body>
+    <main class="header">
+        <!-- Nombre página, buscador y carrito -->
+        <h1>Juegos</h1>
+        <section>
+            <form method="post">
+                <input type="search">
+                <input type="submit" value="Buscar">
+            </form>
+
+        </section>
+        <input type="button" value="Carrito">
+    </main>
+
+    <!-- Barra de navegación -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="productos.html">Inicio</a></li>
+            <li><a href="#">PlayStation</a></li>
+            <li><a href="#">Nintendo</a></li>
+            <li><a href="#">Xbox</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido -->
+    <section class="content">
+        <article>
+
+            <img src="img/ps5.png" alt="Foto de la consola PS5" />
+
+            <section>
+                <h2>Consola PlayStation 5</h2>
+                <p>Experimenta cargas superrápidas gracias a una unidad de estado sólido (SSD) de alta velocidad, una
+                    inmersión
+                    más profunda con retroalimentación háptica, gatillos adaptivos y el nuevo audio 3D, además de una
+                    nueva
+                    generación de increíbles juegosde PlayStation®.</p>
+                <p>Precio: 499€</p>
+                <section>
+                    <p>Unidades disponibles: </p>
+                    <input type="text" id="unidades" value="50" disabled />
+                </section>
+                <section>
+                    <p>Cantidad:</p>
+                    <input type="number" value="1" min="1" max="50" onchange="cantidad(value)">
+                    <div id="paypal-button" class="index-0"></div>
+                </section>
+            </section>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <ul>
+            <li>
+                <a href="#">Sobre nosotros</a>
+            </li>
+            <li>
+                <a href="#">Política de privacidad</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
